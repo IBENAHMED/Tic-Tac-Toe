@@ -1,0 +1,15 @@
+@mixin small() {
+    @media ($sm) {
+        @content;
+    }
+}
+@mixin medium() {
+    @media ($md) {
+        @content;
+    }
+}
+@mixin larg() {
+    @media ($lg) {
+        @content;
+    }
+}

@@ -1,0 +1,47 @@
+.game {
+    height: 100vh;
+    @include flex(center, center, 0, column);
+
+    &_boxs {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(50px, 120px));
+        grid-template-rows: repeat(3, minmax(50px, 120px));
+        justify-content: center;
+        gap: rem(2);
+        margin-top: rem(20);
+        margin-bottom: rem(20);
+        border: 2px solid $black;
+        background-color: $black;
+
+        &_box {
+            background-color: $white;
+            @include flex(center, center);
+            font-size: rem(25);
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.871);
+            }
+        }
+    }
+
+    &_turn {
+        margin-top: rem(25);
+        margin-bottom: rem(25);
+        font-size: rem(30);
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    &_restart {
+        background-color: rgba(23, 23, 197, 0.55);
+        padding: rem(15) rem(35);
+        border-radius: rem(50);
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(23, 23, 197, 0.351);
+        }
+    }
+}

@@ -1,0 +1,15 @@
+// base
+@import "./base/reset";
+@import "./base/typography";
+
+// minix and variables
+@import "./partials/mixin";
+@import "./partials/variables";
+@import "./partials/media_quiers";
+@import "./partials/function";
+
+// conatiner
+@import "./components/container";
+
+// page
+@import "./page/home.scss";

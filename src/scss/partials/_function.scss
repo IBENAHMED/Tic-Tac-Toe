@@ -1,0 +1,5 @@
+@function rem($value) {
+    @if(type-of($value)==number) {
+        @return calc($value / 16)+rem;
+    }
+}
